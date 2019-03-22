@@ -251,7 +251,8 @@ public class UserAgent extends CallListenerAdapter implements CallWatcherListene
             md.setPort(media_port);
             media_port+=2;
          }
-         sd.addMediaDescriptor(md.toMediaDescriptor());
+         MediaDescriptor med = md.toMediaDescriptor();
+         sd.addMediaDescriptor(med);
       }
       return sd;
    }

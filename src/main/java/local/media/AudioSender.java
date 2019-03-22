@@ -167,7 +167,8 @@ public class AudioSender
             if (sound) ExtendedAudioSystem.closeAudioInputLine();
          }
          else
-         {  System.out.println("Error creating the rtp stream.");
+         {  
+        	 System.out.println("Error creating the rtp stream.");
          }
       }
       catch (Exception e) { e.printStackTrace(); }

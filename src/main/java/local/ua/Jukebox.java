@@ -78,7 +78,7 @@ public class Jukebox extends MultipleUAS
    }
    
 
-   /** Prints out a message to stantard output. */
+   /** Prints out a message to standard output. */
    void printOut(String str)
    {  if (stdout!=null) stdout.println(str);
    }
@@ -127,7 +127,7 @@ public class Jukebox extends MultipleUAS
       if (UA.ua_profile.hangup_time<=0) UA.ua_profile.hangup_time=MAX_LIFE_TIME;
       new Jukebox(UA.sip_provider,UA.ua_profile,media_ports);
       
-      // promt before exit
+      // prompt before exit
       if (prompt_exit) 
       try
       {  System.out.println("press 'enter' to exit");

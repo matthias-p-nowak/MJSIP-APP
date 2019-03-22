@@ -1,27 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.zoolu</groupId>
-  <artifactId>MJSIP-APPs</artifactId>
-  <version>1.7.1-SNAPSHOT</version>
+	<groupId>org.zoolu</groupId>
+	<artifactId>MJSIP-APPs</artifactId>
+	<version>1.7.1-SNAPSHOT</version>
 
-  <name>MJSIP-APPs</name>
- 
-  <description>Fork of the mjsip.org project - only SIP part</description>
+	<name>MJSIP-APPs</name>
 
-  <dependencies>
-  	<dependency>
-  		<groupId>org.zoolu</groupId>
-  		<artifactId>MJSIP</artifactId>
-  		<version>1.7.1-SNAPSHOT</version>
-  	</dependency>
-  		<dependency>
-  		<groupId>javax.media</groupId>
-  		<artifactId>jmf</artifactId>
-  		<version>2.1.1e</version>
-  	</dependency>
-  </dependencies>
+	<description>Fork of the mjsip.org project - only SIP part</description>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.0</version>
+				<configuration>
+					<!-- http://maven.apache.org/plugins/maven-compiler-plugin/ -->
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.zoolu</groupId>
+			<artifactId>MJSIP</artifactId>
+			<version>1.7.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.media</groupId>
+			<artifactId>jmf</artifactId>
+			<version>2.1.1e</version>
+		</dependency>
+	</dependencies>
 </project>

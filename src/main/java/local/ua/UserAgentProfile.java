@@ -291,7 +291,8 @@ public class UserAgentProfile extends Configure
          }
          if (audio_type_list.size()>0)
          {  Vector audio_specs=new Vector(audio_type_list.size());
-            for (int i=0; i<audio_type_list.size(); i++) audio_specs.addElement(MediaSpec.parseMediaSpec("audio "+(String)audio_type_list.elementAt(i)));
+            for (int i=0; i<audio_type_list.size(); i++) 
+            	audio_specs.addElement(MediaSpec.parseMediaSpec("audio "+(String)audio_type_list.elementAt(i)));
             media_descs.addElement(new MediaDesc("audio",audio_port,"RTP/AVP",audio_specs));
          }
          if (video_types!=null)
@@ -334,7 +335,9 @@ public class UserAgentProfile extends Configure
       for (int i=0; i<media_descs.size(); i++)
       {  MediaDesc md=(MediaDesc)media_descs.elementAt(i);
          Vector media_specs=media_spec_mtable.get(md.getMedia());
-         if (media_specs!=null) for (int j=0; j<media_specs.size(); j++) md.addMediaSpec((MediaSpec)media_specs.elementAt(j));
+         if (media_specs!=null) 
+        	 for (int j=0; j<media_specs.size(); j++) 
+        		 md.addMediaSpec((MediaSpec)media_specs.elementAt(j));
       }
       
       if (ua_jar!=null && ua_jar.equalsIgnoreCase(Configure.NONE)) ua_jar=null;

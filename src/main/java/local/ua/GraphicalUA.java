@@ -370,8 +370,10 @@ public class GraphicalUA extends JFrame implements UserAgentListener
       else
       {  // try to parse a SipURL
          SipURL url=new SipURL(name);
-         if (url!=null) name=url.toString();
-         else name=null;
+         if (url!=null) 
+        	 name=url.toString();
+         else 
+        	 name=null;
       }
 
       if (name==null)

@@ -103,13 +103,13 @@ public class ServerProfile extends Configure
    public ProxyingRule[] domain_proxying_rules=null;
 
 
-   // ******************** undocumented parametes ********************
+   // ******************** undocumented parameters ********************
 
    /** Whether maintaining a memory log. */
    public boolean memory_log=false;
 
 
-   // ************************** costructors *************************
+   // ************************** constructors *************************
 
    /** Costructs a new ServerProfile */
    public ServerProfile(String file)
